@@ -7,12 +7,12 @@ public class SumProgram {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter first number: ");
-        int a = input.nextInt();
+        int number1 = input.nextInt();
 
         System.out.print("Enter second number: ");
-        int b = input.nextInt();
+        int number2 = input.nextInt();
 
-        int sum = a + b;
+        int sum = number1 + number2;
 
         System.out.println("Sum = " + sum);
 
