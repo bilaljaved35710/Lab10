@@ -2,13 +2,8 @@ public class UserAuthentication {
 
     public boolean login(String username, String password) {
 
-<<<<<<< HEAD
         if (username.equals("admin") && password.equals("1234")) {
-            System.out.println("Admin Login successful");
-=======
-        if (username.equals("user") && password.equals("5678")) {
-            System.out.println("UserLogin successful");
->>>>>>> AnotherUser
+            System.out.println("Login successful");
             return true;
         } else {
             System.out.println("Invalid username or password");
@@ -16,12 +11,18 @@ public class UserAuthentication {
         }
     }
 
+    // New Feature
+    public void resetPassword(String email) {
+
+        System.out.println("Password reset link sent to: " + email);
+    }
+
     public static void main(String[] args) {
 
         UserAuthentication auth = new UserAuthentication();
 
-        boolean result = auth.login("user", "5678");
+        auth.login("admin", "1234");
 
-        System.out.println("Result: " + result);
+        auth.resetPassword("admin@gmail.com");
     }
 }
