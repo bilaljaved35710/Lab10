@@ -3,7 +3,7 @@ public class UserAuthentication {
     public boolean login(String username, String password) {
 
         if (username.equals("admin") && password.equals("1234")) {
-            System.out.println("Login successful");
+            System.out.println("Admin Login successful");
             return true;
         } else {
             System.out.println("Invalid username or password");
