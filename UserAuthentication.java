@@ -2,8 +2,8 @@ public class UserAuthentication {
 
     public boolean login(String username, String password) {
 
-        if (username.equals("admin") && password.equals("1234")) {
-            System.out.println("Login successful");
+        if (username.equals("user") && password.equals("5678")) {
+            System.out.println("UserLogin successful");
             return true;
         } else {
             System.out.println("Invalid username or password");
@@ -15,7 +15,7 @@ public class UserAuthentication {
 
         UserAuthentication auth = new UserAuthentication();
 
-        boolean result = auth.login("admin", "1234");
+        boolean result = auth.login("user", "5678");
 
         System.out.println("Result: " + result);
     }
